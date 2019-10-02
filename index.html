@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/custom-styles.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>Semantics</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between align-items-center" role="navigation">
+		<div class="d-flex justify-content-center align-items-center">
+			<button class="btn" type="button" role="button" id="sidebarManage" aria-expanded="false" aria-controls="sidebar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" aria-label="logo" href="#">UTube-Logo</a>
+		</div>
+
+	
+		<form class="form">
+			<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn form-btn" aria-label="search button" type="submit"><i class="material-icons">search</i></button>
+		</form>
+
+		<ul class="navbar-nav justify-content-center align-items-center pr-1">
+			<li class="nav-item active">
+				<a class="nav-link" href="#" aria-label="video call">
+					<i class="material-icons">video_call</i>
+				</a>
+			</li>
+			<li class="nav-item">
+					<a class="nav-link" href="#" aria-label="apps list">
+							<i class="material-icons">apps</i>
+						</a>
+			</li>
+
+			<li class="nav-item">
+				<a href="#" class="nav-link" aria-label="messages">
+					<svg viewBox="0 -6 40 40" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+						<path d="M12.04 4C17 4 21 7.7 21 12.3c0 4.57-4 8.28-8.96 8.28-1.76 0-3.4-.47-4.8-1.28-.15-.1-.35-.1-.52-.04-1.58.68-2.8.88-3.45.93-.2 0-.34-.26-.22-.4.6-.9 1.08-1.8 1.43-2.5.1-.2.1-.46-.04-.65C3.58 15.4 3.1 13.9 3.1 12.3c0-4.6 4-8.3 8.94-8.3zm1.6 9.56v1.58c0 .17.22.25.34.13l3.43-3.34c.1-.07.1-.2 0-.27L14 8.32c-.12-.12-.33-.04-.33.13V10c0 .1-.07.18-.17.2-3.38.52-5.04 2.73-5.74 5.1-.06.2.2.34.32.2 1.3-1.42 3.05-2.1 5.4-2.13.1 0 .2.1.2.2z" class="style-scope yt-icon"></path>
+					</g></svg>
+				</a>
+			</li>
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link" href="#" aria-label="notifications">
+					<i class="material-icons">notifications</i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" aria-label="user profile	">
+					<div class="user_account"></div>
+				</a>
+			</li>
+		</ul>
+			
+	</nav>
+
+
+	<div class="container-fluid d-flex flex-row">
+
+		<aside class="navbar navbar-expand-lg navbar-light bg-light" aria-labelledby="sidebar-label" id="sidebar" tabindex="-1">
+
+			<ul class="navbar-nav flex-column" role="tablist">
+				<li class="nav-item" role="presentation">
+					<a class="navbar-link active" href="#" aria-label="home" role="tab">
+						<i class="material-icons">home</i>
+						<p class="navbar-link_text">Home</p>
+					</a>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a class="navbar-link" href="#" aria-label="trends" role="tab">
+						<i class="material-icons">whatshot</i>
+						<p class="navbar-link_text">Trending</p>
+					</a>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a class="navbar-link" href="#" aria-label="subscriptions" role="tab">
+						<i class="material-icons">subscriptions</i>
+						<p class="navbar-link_text">Subscriptions</p>
+					</a>
+				</li>
+			</ul>
+		</aside>
+
+
+		<main class="container p-0" role="main">
+
+			<section class="recommended" role="row">
+				<h2 class="section-title my-4">Recommended</h2>
+				<div class="section-body d-flex flex-row flex-wrap" role="list" aria-label="List of videos">
+
+					<div class="card mb-4 mr-1" role="listitem">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe src="https://www.youtube.com/embed/xnt2xSNRNn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<div class="card-body" aria-label="video information" role="button" tabindex="0">
+							<h4 class="card-title">Lectures on Quantum Physics</h4>
+							
+							<div class="more-info">
+								<h4 class="channel_name">Physics</h4>
+								<div class="d-flex flex-row my-0">
+									<p class="views">1M views</p>
+									<p class="upload_time ml-2"> 1 month ago</p>
+								</div>
+							</div>
+
+							<button class="btn material-icons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" role="button"ria-expanded="false">
+							more_vert
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<hr>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="card mb-4 mr-1" role="listitem">
+						<div class="embed-responsive embed-responsive-16by9">
+								<iframe src="https://www.youtube.com/embed/AyrZvsP60lY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<div class="card-body" aria-label="video information" role="button" tabindex="0">
+							<h4 class="card-title">Jungle Book</h4>
+							<div class="more-info">
+								<h4 class="channel_name">Moglie</h4>
+								<div class="d-flex flex-row my-0">
+									<p class="views">1.2M views</p>
+									<p class="upload_time ml-2"> 10 days ago</p>
+								</div>
+							</div>
+
+							<button class="btn material-icons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+							more_vert
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<hr>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</div>
+					</div>
+					<div class="card mb-4 mr-1" role="listitem">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe width="1150" height="647" src="https://www.youtube.com/embed/raCDY1CGVaM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<div class="card-body" aria-label="video information" role="button" tabindex="0">
+							<h4 class="card-title">hindi cartoon for kids jungle book kahanaiya in hindi mega episode2</h4>
+							<div class="more-info">
+								<h4 class="channel_name">Power Kids TV</h4>
+								<div class="d-flex flex-row my-0">
+									<p class="views">1M views</p>
+									<p class="upload_time ml-2"> 1 month ago</p>
+								</div>
+							</div>
+
+							<button class="btn material-icons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" role="button"ria-expanded="false">
+								more_vert
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<hr>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="card mb-4 mr-1" role="listitem">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe width="1150" height="647" src="https://www.youtube.com/embed/JTz7omS9lwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<div class="card-body" aria-label="video information" role="button" tabindex="0">
+							<h4 class="card-title">Draw Nobita and Shizuka Wedding | Vẽ Và tô Màu Dám Cưới Nobita và Shizuka</h4>
+							<div class="more-info">
+								<h4 class="channel_name">PAWPAW Rainbow</h4>
+								<div class="d-flex flex-row my-0">
+									<p class="views">1.2M views</p>
+									<p class="upload_time ml-2"> 10 days ago</p>
+								</div>
+							</div>
+
+							<button class="btn material-icons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" role="button"ria-expanded="false">
+							more_vert
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<hr>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				
+				<button class="btn btn-light btn-lg" type="button" aria-label="show more videos">SHOW MORE</button>
+				
+			</section>
+			<hr>
+
+
+			<section class="youtube_originals" role="row">
+				<h2 class="section-title my-4">Youtube originals</h2>
+				<div class="section-body d-flex flex-row flex-wrap" role="list" aria-label="List of videos">
+					
+					<div class="card mb-4 mr-1" role="listitem">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe src="https://www.youtube.com/embed/xnt2xSNRNn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<div class="card-body" aria-label="video information" role="button" tabindex="0">
+							<h4 class="card-title">Lectures on Quantum Physics</h4>
+							<div class="more-info">
+								<h4 class="channel_name">Physics</h4>
+								<div class="d-flex flex-row my-0">
+									<p class="views">1M views</p>
+									<p class="upload_time ml-2"> 1 month ago</p>
+								</div>
+							</div>
+
+							<button class="btn material-icons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" role="button"ria-expanded="false">
+							more_vert
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<hr>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</div>
+					</div>
+					<div class="card mb-4 mr-1" role="listitem">
+						<div class="embed-responsive embed-responsive-16by9">
+								<iframe src="https://www.youtube.com/embed/AyrZvsP60lY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<div class="card-body" aria-label="video information" role="button" tabindex="0">
+							<h4 class="card-title">Jungle Book</h4>
+							<div class="more-info">
+								<h4 class="channel_name">Moglie</h4>
+								<div class="d-flex flex-row my-0">
+									<p class="views">1.2M views</p>
+									<p class="upload_time ml-2"> 10 days ago</p>
+								</div>
+							</div>
+
+							<button class="btn material-icons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" role="button"ria-expanded="false">
+							more_vert
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<hr>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</div>
+					</div>
+					<div class="card mb-4 mr-1" role="listitem">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe width="1150" height="647" src="https://www.youtube.com/embed/raCDY1CGVaM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<div class="card-body" aria-label="video information" role="button" tabindex="0">
+							<h4 class="card-title">hindi cartoon for kids jungle book kahanaiya in hindi mega episode2</h4>
+							<div class="more-info">
+								<h4 class="channel_name">Power Kids TV</h4>
+								<div class="d-flex flex-row my-0">
+									<p class="views">1M views</p>
+									<p class="upload_time ml-2"> 1 month ago</p>
+								</div>
+							</div>
+
+							<button class="btn material-icons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" role="button"ria-expanded="false">
+							more_vert
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<hr>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+							
+						</div>
+					</div>
+					<div class="card mb-4 mr-1" role="listitem">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe width="1150" height="647" src="https://www.youtube.com/embed/JTz7omS9lwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<div class="card-body" aria-label="video information" role="button" tabindex="0">
+							<h4 class="card-title">Draw Nobita and Shizuka Wedding | Vẽ Và tô Màu Dám Cưới Nobita và Shizuka</h4>
+							<div class="more-info">
+								<h4 class="channel_name">PAWPAW Rainbow</h4>
+								<div class="d-flex flex-row my-0">
+									<p class="views">1.2M views</p>
+									<p class="upload_time ml-2"> 10 days ago</p>
+								</div>
+							</div>
+
+							<button class="btn material-icons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" role="button"ria-expanded="false">
+							more_vert
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<hr>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="card mb-4 mr-1" role="listitem">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe width="1150" height="647" src="https://www.youtube.com/embed/raCDY1CGVaM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+	
+						<div class="card-body" aria-label="video information" role="button" tabindex="0">
+							<h4 class="card-title">hindi cartoon for kids jungle book kahanaiya in hindi mega episode2</h4>
+							<div class="more-info">
+								<h4 class="channel_name">Power Kids TV</h4>
+								<div class="d-flex flex-row my-0">
+									<p class="views">1M views</p>
+									<p class="upload_time ml-2"> 1 month ago</p>
+								</div>
+
+								<button class="btn material-icons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" role="button"ria-expanded="false">
+									more_vert
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<hr>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="card mb-4 mr-1" role="listitem">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe width="1150" height="647" src="https://www.youtube.com/embed/JTz7omS9lwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+	
+						<div class="card-body" aria-label="video information" role="button" tabindex="0">
+							<h4 class="card-title">Draw Nobita and Shizuka Wedding | Vẽ Và tô Màu Dám Cưới Nobita và Shizuka</h4>
+							<div class="more-info">
+								<h4 class="channel_name">PAWPAW Rainbow</h4>
+								<div class="d-flex flex-row my-0">
+									<p class="views">1.2M views</p>
+									<p class="upload_time ml-2"> 10 days ago</p>
+								</div>
+							</div>
+							<button class="btn material-icons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" role="button"ria-expanded="false">
+							more_vert
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<hr>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+				<button class="btn btn-circle btn-circle-right material-icons p-2" type="button" role="button" aria-label="scroll right">keyboard_arrow_right</button>
+				
+				<button class="btn btn-circle btn-circle-left material-icons p-2" type="button" aria-label="scroll left" role="button">keyboard_arrow_left</button>
+				
+			</section>
+			<hr>
+
+		</main>
+
+	</div>
+
+
+	<div class="overlay"></div>
+	<script src="js/index.js"></script>
+
+	<script src="node_modules/jquery/dist/jquery.slim.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

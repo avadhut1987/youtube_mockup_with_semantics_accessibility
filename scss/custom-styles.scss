@@ -1,0 +1,213 @@
+// Breakpoints
+$container-max-widths: (
+	xs: 428px,
+	sm: 642px,
+  md: 856px,
+  lg: 1070px,
+	xl: 1418px
+);
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1100px,
+  xl: 1500px
+);
+
+
+// Cards
+$card-bg: transparent;
+$card-border-width: 0;
+
+
+// Buttons 
+$btn-font-size-lg: 0.875rem;
+$btn-font-size-sm: 1.25rem;
+$btn-focus-box-shadow: none;
+
+
+// Anchors
+$input-border-radius: 0;
+$link-hover-decoration: none;
+$input-focus-box-shadow: none;
+
+
+// General
+$body-bg: rgb(249, 249, 249);
+$font-family-base: Roboto, Arial, sans-serif;
+$font-size-base: 0.875rem;
+$font-weight-normal: 500;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// Over written original styling
+
+// Main Navbar
+.navbar-nav {
+	flex-direction: unset;
+}
+.nav-item {
+	width: 48px;
+}
+.form {
+	display: flex;
+	flex-direction: row;
+}
+@media (min-width: 576px) and (max-width: 990px) {
+	.form {
+		width: 30%;
+	}
+}
+@media screen and (min-width: 990px) {
+	.form {
+		width: 65%;
+	}
+}
+
+
+// Sidebar
+#sidebarManage:hover, #sidebarManage:focus {
+	box-shadow: none;
+	border-color: transparent;
+}
+#sidebar {
+	transition-delay: 1s;
+	background-color: white;
+	align-items: flex-start;
+	flex-direction: column;
+	padding-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+	margin-right: 15px;
+
+	.navbar-nav, .nav-item {
+		width: unset;
+	}
+	.navbar-nav {
+		padding-top: 4px;
+	}
+	.nav-item {
+		padding-bottom: 16px;
+		padding-top: 16px;
+	}
+	.nav-item:hover {
+		background-color: rgba(0,0,0,0.05);
+	}
+	.navbar-link {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+
+	.navbar-link.active {
+		.material-icons {
+			color: red;
+		}
+		.navbar-link_text {
+			font-weight: 500;
+		}
+	}
+
+	.navbar-link_text {
+		color: rgb(13, 13, 13);
+		margin: auto;
+		padding-top: 8px;
+		font-size: 10px;
+	}
+	.material-icons {
+		font-size: 28px;
+	}
+	
+}
+#sidebar.active {
+	transition-delay: 1s;
+	width: 250px;
+	.navbar-nav {
+		padding-top: 14px;
+		padding-left: 9px;
+	}
+	.navbar-nav, .nav-item {
+		width: 100%;
+	}
+	.nav-item {
+		padding-left: 8px;
+		padding-bottom: 6px;
+		padding-top: 6px;
+	}
+	.navbar-link {
+		flex-direction: row;
+	}
+	.navbar-link_text {
+		font-size: 0.875rem;
+		font-weight: 400;
+		margin-left: 28px;
+		padding-top: 0;
+	}
+}
+
+
+// Cards
+.card-body {
+	padding-left: 0;
+	position: relative;
+
+	.btn {
+		position: absolute;
+		right: -10px;
+		top: 6%;
+		visibility: hidden;
+	}
+}
+.card-body:hover {
+	.btn {
+		visibility: visible;
+	}
+}
+
+// Buttons
+.btn-circle, .btn-circle:focus {
+	border-radius: 50%;
+	background-color: white;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.2);
+}
+.btn-light:hover, .btn-light:active {
+	background-color: transparent;
+	border-color: transparent;
+}
+.btn-light:focus {
+	outline: rgb(77, 144, 254) auto 1px;
+	box-shadow: 0 0 0 transparent;
+}
+.material-icons {
+	color: rgb(51, 51, 51);
+}
+.card-body {
+	.material-icons {
+		color: rgb(145, 145, 145);
+	}
+}
+.card-body {
+	.material-icons:hover {
+		color: rgb(36, 36, 36);
+	}
+}
+
+
+// General
+.container-fluid {
+	padding-left: 0;
+}
+h2 {
+	font-size: 1rem;
+	font-weight: 500;
+}
+h4 {
+	font-size: 0.875rem;
+	font-weight: 500;
+	margin: 0;
+}
